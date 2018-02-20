@@ -1,0 +1,178 @@
+
+.. ifslides::
+
+  .. image:: /_static/nott_logo.png
+    :align: right
+
+Problems with p
+`````````````````````````````````````````````````
+
+Holmes and Peirce
+
+(these slides available from www.peirce.org.uk/p-hack)
+
+Plan
+----------------------
+
+ - Perceived problems
+ - Proper problem:
+  - p-hacking: Popular topics
+  - p-hacking: exPerimenter degrees of freedom
+  - p-hacking: Potential solutions
+
+This is hopefully going to be a discussion. Nick and I don't necessarily have the answers!
+
+Perceived versus Proper Problems
+`````````````````````````````````````````````````
+
+Parametric versus non-parametric stats
+--------------------------------------------
+
+.. rst-class:: build
+
+  - Are your data normally distributed?
+  - i.e. should you be using non-parametric stats?
+  - Then again:
+   - Will it make any difference?
+   - Are your data so close to p=0.05 that the tests give different answers?
+
+p is not what you think
+--------------------------------------------
+
+ - Many (even well-educated scientists) don't know understand p
+ - Nick will cover this later
+ - Then again, have you ever come across a really good example where it matters?!
+
+Proper Problems
+`````````````````````````````````````````````````
+
+I don't think either of those problems have led to large-scale errors in reported findings
+
+Proper Problems
+--------------------------------------------
+
+These really have impacted "findings":
+  - Scientists are not impartial
+  - Any one dataset can be analysed in more than one way
+  - (Many) journals only publish "exciting" results
+  - Hypothesis testing was never designed to cope with these issues
+
+**Most reported positive results are false alarms** (`Horton 2015 <http://www.thelancet.com/pdfs/journals/lancet/PIIS0140-6736%2815%2960696-1.pdf>`_ ; `Ioannidis, 2005 <http://statweb.stanford.edu/~tibs/sta306bfiles/ioan.pdf>`_ ; `Harris 2017 <https://www.amazon.com/Rigor-Mortis-Science-Worthless-Billions/dp/0465097901>`_ )
+
+p is meaningless in exploratory research
+--------------------------------------------
+
+  - We know that we should correct for "Family-wise" error
+  - What defines a "Family" in this case?
+  - Do all studies have the same Family-wise error?
+
+*One 'is allowed' to apply statistical tests in exploratory research, just as long as one
+realizes that they do not have evidential impact.* `De Groot (1956), translated by Wagenmakers et al (2014) <https://www.ncbi.nlm.nih.gov/pubmed/24589374>`_
+
+p **only makes senses** when there was a single way to analyse the data, that you decided on beforehand.
+
+Places of increased family-wise error
+--------------------------------------------
+
+.. rst-class:: build
+
+  - **Post-hoc decisions**: aka experimenter "degrees of freedom"
+
+    - decide when to stop collecting
+    - decide how much 'filtering'
+    - decide on test threshold
+    - decide on parametric/non-parametric
+
+  - **Population studies**
+
+    - lots of variables
+    - lots^2 comparisons
+    - don't report the comparisons of things that weren't interesting (or that don't fit your hypoth)
+
+.. nextslide::
+
+"This cost us a lot of time and our own money to collect.  There's got to be something here we can salvage because it's a cool (rich & unique) data set.” Brian Wansink, *The grad student that never said 'no'*
+
+  - **Postdocs everywhere**: labs with lots of staff
+
+    - shall we rerun the study?
+    - what if two studies have disagreeing results?
+    - then again, are we saying that a study can't be repeated?
+
+Potential solutions
+````````````````````````
+
+For discussion's sake (I'm not saying I agree with these)
+
+Playing with Bayes?
+---------------------
+
+Maybe Bayesian statistics get us out of this (e.g. see Wagenmakers)
+
+Advantages:
+
+.. rst-class:: build
+
+  - Present a Bayes Factor, not a simple criterion for real/random
+  - But won't people "learn" to categorise these (explicitly or otherwise):
+
+    - BF 1 – 3 means "anecdotal" (like p<0.1?)
+    - ...
+    - BF 30 - 100 means "very strong" (like p<0.001?)
+
+  - If experimenters *want* a certain result and can run/re-run/adjust then Bayes doesn't fix that?
+
+Prevent *p* testing (in all forms)
+------------------------------------------
+
+.. rst-class:: build
+
+  - 2016: *Basic and Applied Social Psychology* has banned reporting of *p* (and *CI*)
+  - Effect sizes allowed?
+  - Have we then converted from "broken measure" to "no measure"?
+
+    - But maybe that's good?
+
+  - Maybe this creates a venue for "exploratory" research?
+
+PsychFileDrawer.org uploads
+------------------------------------------
+
+.. rst-class:: build
+
+We could upload all our null results to PsychFileDrawer.org
+
+  - That would get rid of the imbalance between positive/null results
+  - Will it, though? Will people read the null findings in Psych File Drawer?
+
+rePlication studies
+------------------------------------------
+
+.. rst-class:: build
+
+We could encourage and enable replications to be conducted
+
+  - make it possible to publish a replication (and a non-replication)
+  - need to make sure that failed replications were well-run
+  - how do we encourage this pursuit?
+
+Preregistration
+------------------------------------------
+
+e.g. pre-register on Open Science Framework
+
+.. rst-class:: build
+
+  - Required in clinical/pharma studies. Required by Declaration of Helsinki `Revision 8 (2013) <https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-involving-human-subjects/>`_ Clause 35. Compare with `DoH Revision 7 (2008) <https://www.wma.net/wp-content/uploads/2016/11/DoH-Oct2008.pdf>`_ Clause 19
+  - It's quite time-consuming to do
+  - Does it help?
+
+    - I could pre-register multiple theories (will anyone check?)
+    - But maybe it helps in reminding us that we changed from our "plan"
+
+  - **Very useful** if you do want to state analysis in advance (e.g. one-tailed test)
+
+*p* reduction
+------------------------------------------
+
+If the core problem is that too many studies are false positives, maybe we should reduce alpha to be 0.005...?
