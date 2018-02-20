@@ -9,7 +9,7 @@ Problems with p
 
 Holmes and Peirce
 
-(these slides available from `www.peirce.org.uk/talks/p-hack`_)
+(these slides available from `www.peirce.org.uk/talks/p-hack`_ )
 
 Plan
 ----------------------
